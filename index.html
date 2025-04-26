@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Conhecimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Quiz de Conhecimentos</h1>
+        <div id="player-name-container">
+            <label for="player-name">Digite seu nome:</label>
+            <input type="text" id="player-name">
+            <button onclick="startGame()">Iniciar Jogo</button>
+        </div>
+        
+        <div id="quiz-container" style="display: none;">
+            <h2 id="category-title"></h2>
+            <p id="question"></p>
+            <input type="text" id="user-answer">
+            <button onclick="checkAnswer()">Enviar Resposta</button>
+            <p id="feedback"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
